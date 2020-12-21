@@ -10,22 +10,9 @@ import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-    private var notificationToken: NotificationToken?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        let realm = try! Realm()
-        
-        notificationToken = realm.objects(TestModel.self).observe { changes in
-            switch changes {
-            case .update(let items, _, let insertions, _):
-                print("added items: \(insertions.map { items[$0].number })")
-                
-            default: break
-            }
-        }
         
         return true
     }
