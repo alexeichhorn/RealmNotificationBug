@@ -28,6 +28,7 @@
 		C8F44A8225901A7B009986AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8F44A8425901A7B009986AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8F44A9125901AEF009986AF /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
+		C8F44A9525901FEA009986AF /* RealmNotificationBug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RealmNotificationBug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		C8F44A7525901A7A009986AF /* RealmNotificationBug */ = {
 			isa = PBXGroup;
 			children = (
+				C8F44A9525901FEA009986AF /* RealmNotificationBug.entitlements */,
 				C8F44A7625901A7A009986AF /* AppDelegate.swift */,
 				C8F44A7825901A7A009986AF /* SceneDelegate.swift */,
 				C8F44A7A25901A7A009986AF /* ViewController.swift */,
@@ -301,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RealmNotificationBug/RealmNotificationBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83GSA2AB6E;
 				INFOPLIST_FILE = RealmNotificationBug/Info.plist;
@@ -311,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.losjet.RealmNotificationBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RealmNotificationBug/RealmNotificationBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83GSA2AB6E;
 				INFOPLIST_FILE = RealmNotificationBug/Info.plist;
@@ -331,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.losjet.RealmNotificationBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
